@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bai 7</title>
+  <style>
+    p {
+      margin: 5px;
+    }
+    input[type="radio"] {
+      margin: 0;
+      display: inline-block;
+      width: fit-content;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="display: flex; justify-content: start;">
+    <div style="display: flex; justify-content: center; flex-direction: column; align-items: start;">
+      <p><b>Interview Feedback</b></p>
+      <p><b>This type of form may be an easy way to consolidate/standardlize feedback on interview candidates</b></p>
+      <div>
+        Candidate Name <input type="text" name="candidate_name" id="candidate_name" /> Position Applied For <input type="text" name="position_applied_for" id="position_applied_for" />
+      </div>
+      <div style="display: flex; flex-direction: row; margin-top: 10px;">
+        <div style="display: flex; flex-direction: column; justify-content: start; margin-right: 20px;">
+          Education Level
+          <select name="education_level" id="education_level">
+            <option value="high_school">High School</option>
+            <option value="bachelor">Bachelors Degree</option>
+            <option value="master">Master Degree</option>
+            <option value="phd">Doctoral Degree</option>
+            <option value="professional">Professional Certification</option>
+          </select>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: start;">
+          Candidate is a good fit for the position
+          <div>
+            <input type="radio"/> Agree
+          </div>
+          <div>
+            <input type="radio"/> Somehwat Agree
+          </div>
+          <div>
+            <input type="radio"/> Neutral
+          </div>
+          <div>
+            <input type="radio"/> Somewhat Disagree
+          </div>
+          <div>
+            <input type="radio"/> Disagree
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row; margin: 10px 0;">
+        Should we hire this candidate? <input type="radio" style="margin-left: 10px;"/> Yes <input type="radio" style="margin-left: 10px;"/> No
+      </div>
+      <div>
+        Comments <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+      </div>
+      <div style="display: flex; justify-content: center; width: 100%; margin: 10px 0px;">
+        <button>Submit</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
